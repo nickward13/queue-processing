@@ -18,5 +18,5 @@ base64_queue_client = QueueClient.from_connection_string(
     message_encode_policy=BinaryBase64EncodePolicy(),
     message_decode_policy=BinaryBase64DecodePolicy())
 
-for i in range(50):
+for i in range(2000):
     send_message(base64_queue_client)
